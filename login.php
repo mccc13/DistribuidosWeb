@@ -36,13 +36,13 @@
             <div class="login-box-body">
                 <p class="login-box-msg">Iniciar Secion</p>
 
-                <form action="index2.html" method="post">
+                <form action="" id="fromlg">
                     <div class="form-group has-feedback">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" name="email" class="form-control" placeholder="Email">
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" name="pass" class="form-control" placeholder="Password">
                         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     </div>
                     <div class="row">
@@ -85,14 +85,17 @@
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- iCheck -->
         <script src="plugins/iCheck/icheck.min.js"></script>
+        <script src="js/getdatos.js" ></script>    
         <script>
-        $(function () {
-            $('input').iCheck({
-                checkboxClass: 'icheckbox_square-blue',
-                radioClass: 'iradio_square-blue',
-                increaseArea: '20%' // optional
+            $(function () {
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_square-blue',
+                    radioClass: 'iradio_square-blue',
+                    increaseArea: '20%' // optional
+                });
             });
-        });
+            
+
         </script>
     </body>
 </html>
