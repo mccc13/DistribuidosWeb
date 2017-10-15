@@ -19,3 +19,4 @@ $(document).on('submit', '#fromlg', function (event) {
         console.log("completado");
     });
 });
+
