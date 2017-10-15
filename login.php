@@ -1,12 +1,8 @@
 <?php
-/**
- * @author Maya
- */
 //session_start();
 require_once './socialauthphp/vendor/autoload.php';
 require_once './socialauthphp/App/Auth/Auth.php';
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -103,8 +99,6 @@ require_once './socialauthphp/App/Auth/Auth.php';
                     increaseArea: '20%' // optional
                 });
             });
-
-
         </script>
     </body>
 </html>
