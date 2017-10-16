@@ -1,7 +1,4 @@
-<?php //
-/**
- * @author Maya
- */
+
 <?php
 //session_start();
 require_once './socialauthphp/vendor/autoload.php';
