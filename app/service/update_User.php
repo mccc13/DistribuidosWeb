@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body = json_decode(file_get_contents("php://input"), true);
 
     // Actualizar usuario
-    $retorno = DaoUsuario::update($body['userID'], $body['nombre'], $body['apellido'], $body['sexo'], $body['pass'], $body['fecha_ini'], $body['fecha_fin'], $body['email']);
+    $retorno = DaoUsuario::update($body['userID'], $body['nombre'], $body['apellido'], $body['sexo'], $body['pass'], $body['fechacre'], $body['fechamod'], $body['email']);
 
 
     if ($retorno) {

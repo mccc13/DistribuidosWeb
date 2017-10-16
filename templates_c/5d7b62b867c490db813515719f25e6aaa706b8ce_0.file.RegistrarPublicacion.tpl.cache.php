@@ -69,14 +69,22 @@ $_smarty_tpl->compiled->nocache_hash = '145094370759e4fe4fefe0e0_09860417';
                                     <label for="inputEdad" class="col-sm-2 control-label">Edad</label>
 
                                     <div class="col-sm-10">
-                                        <input type="numeric" class="form-control" id="inputEdad" placeholder="Edad">
+                                        <input type="text" class="form-control" id="inputEdad" placeholder="Edad">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputEstatura" class="col-sm-2 control-label">Estatura</label>
 
                                     <div class="col-sm-10">
-                                        <input type="numeric" class="form-control" id="inputEstatura" placeholder="Estatura">
+                                 
+                                        <input type="text" class="form-control" id="inputEstatura" placeholder="Estatura">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputSexo" class="col-sm-2 control-label">Sexo</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputSexo" placeholder="Sexo">
                                     </div>
                                 </div>
                                 <div class="form-group">

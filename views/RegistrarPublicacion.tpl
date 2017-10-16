@@ -11,10 +11,10 @@
 </section>
 
 <section class="content">
-    <div class="row">
-        <div class="col-md-12">
+<div class="row">
+    <div class="col-md-12">
             <!-- Custom Tabs -->
-            <div class="nav-tabs-custom">
+        <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab_1" data-toggle="tab">Registrar Publicacion</a></li>
                     <li><a href="#tab_2" data-toggle="tab">Datos Adicionales</a></li>
@@ -22,7 +22,8 @@
 
                     <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
                 </ul>
-                <div class="tab-content">
+                
+            <div class="tab-content">
                     <div class="tab-pane active" id="tab_1">
                         <form class="form-horizontal">
                             <div class="box-body">
@@ -55,10 +56,10 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputAlias" class="col-sm-2 control-label">Alias</label>
+                                    <label for="inputSexo" class="col-sm-2 control-label">Sexo</label>
 
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputAlias" placeholder="Alias">
+                                        <input type="text" class="form-control" id="inputAlias" placeholder="Sexo">
                                     </div>
                                 </div>
                                 
@@ -77,33 +78,123 @@
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_2">
-                        The European languages are members of the same family. Their separate existence is a myth.
-                        For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
-                        in their grammar, their pronunciation and their most common words. Everyone realizes why a
-                        new common language would be desirable: one could refuse to pay expensive translators. To
-                        achieve this, it would be necessary to have uniform grammar, pronunciation and more common
-                        words. If several languages coalesce, the grammar of the resulting language is more simple
-                        and regular than that of the individual languages.
+                        
+                        <form class="form-horizontal">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="inputcolorpelo" class="col-sm-2 control-label">Color de cabello</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputcolorpelo" placeholder="Color de cabello">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputcolorpiel" class="col-sm-2 control-label">Color de piel</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputcolorpiel" placeholder="Color de piel">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputvestimenta" class="col-sm-2 control-label">Vestimenta</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputvestimenta" placeholder="Vestimenta">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputconstitucion" class="col-sm-2 control-label">Constitucion corporal</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputEstatura" placeholder="Constitucion corporal">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputotros" class="col-sm-2 control-label">Informacion adicional</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputotros" placeholder="Informacion adicional">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                        like Aldus PageMaker including versions of Lorem Ipsum.
+                         <form class="form-horizontal">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="inputnombre" class="col-sm-2 control-label">Nombre</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputnombre" placeholder="Nombre">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputapellido" class="col-sm-2 control-label">Apellido</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputapellido" placeholder="Apellido">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputsexo" class="col-sm-2 control-label">Sexo</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputsexo" placeholder="Sexo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputparentesco" class="col-sm-2 control-label">Parentesco</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputparentesco" placeholder="Parentesco">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputtelefono" class="col-sm-2 control-label">Telefono</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="numeric" class="form-control" id="inputTelefono" placeholder="Telefono">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputemail" class="col-sm-2 control-label">Email</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputemail" placeholder="Email">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                     </div>
                     <!-- /.tab-pane -->
-                </div>
-                <!-- /.tab-content -->
             </div>
             <!-- nav-tabs-custom -->
         </div>
         <!-- /.col -->
-
-
     </div>
 </div>
 
