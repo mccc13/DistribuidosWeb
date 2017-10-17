@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31-dev/1, created on 2017-10-17 01:39:42
+/* Smarty version 3.1.31-dev/1, created on 2017-10-17 07:46:06
   from "C:\xampp\htdocs\DistribuidosWeb\views\RegistrarPublicacion.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31-dev/1',
-  'unifunc' => 'content_59e5433e826848_08389584',
+  'unifunc' => 'content_59e5991e34b610_72867329',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5d7b62b867c490db813515719f25e6aaa706b8ce' => 
     array (
       0 => 'C:\\xampp\\htdocs\\DistribuidosWeb\\views\\RegistrarPublicacion.tpl',
-      1 => 1508197171,
+      1 => 1508219156,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59e5433e826848_08389584 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '46088775259e5433e583255_67593157';
+function content_59e5991e34b610_72867329 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '67695853159e5991e2ff4e1_95450387';
 ?>
 <section class="content-header">
     <h1>
@@ -88,15 +88,7 @@ $_smarty_tpl->compiled->nocache_hash = '46088775259e5433e583255_67593157';
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
 
 
@@ -142,15 +134,7 @@ $_smarty_tpl->compiled->nocache_hash = '46088775259e5433e583255_67593157';
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
 
 
@@ -202,15 +186,7 @@ $_smarty_tpl->compiled->nocache_hash = '46088775259e5433e583255_67593157';
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
 
 

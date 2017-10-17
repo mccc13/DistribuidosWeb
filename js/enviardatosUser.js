@@ -2,14 +2,14 @@ $(document).on('submit', '#fromResgistrar', function (event) {
     event.preventDefault();
     var datas = $(this).serialize();
     $.ajax({
-        url: "service/inserta_User.php",
+        url: "app/service/inserta_User.php",
         dataType: 'json',
         data: datas,
         type: 'POST'
 
     }).done(function (respuesta) {
         console.log(respuesta);
-         window.location.href = 'Index.php';
+         window.location.href = 'login.php';
     }).fail(function (resp) {
         console.log(resp.responseText);
     }).always(function () {

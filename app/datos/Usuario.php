@@ -12,8 +12,16 @@ class Usuario {
     var $fechacre;
     var $fechamod;
 
-    function __construct() {
-        
+    function __construct($usuarioid, $nombre, $apellido, $sexo, $email, $pass, $estado, $fechai, $fechaf) {
+        $this->usuarioid = $usuarioid;
+        $this->nombre = $nombre;
+        $this->apellido = $apellido;
+        $this->sexo = $sexo;
+        $this->email = $email;
+        $this->pass = $pass;
+        $this->estado = $estado;
+        $this->fechacre = $fechai;
+        $this->fechamod = $fechaf;
     }
 
     function getUsuarioid() {
@@ -45,11 +53,11 @@ class Usuario {
     }
 
     function getFechai() {
-        return $this->fechai;
+        return $this->fechacre;
     }
 
     function getFechaf() {
-        return $this->fechaf;
+        return $this->fechamod;
     }
 
     function setUsuarioid($usuarioid) {

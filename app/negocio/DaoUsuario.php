@@ -19,21 +19,23 @@ class DaoUsuario {
      * @param $email       email de usuario
      * @param $pass        contraseña de usuario
      * @param $estado 
-     * @param fechacre   fecha de registro
-     * @param $fechaactual   fecha fin
+     * @param $fecha_ini   fecha de registro
+     * @param $fecha_fin   fecha fin
 
      * @return 
      */
-    public static function regitrarUsuario($nombre, $apellido, $sexo, $email, $pass, $estado) {
+    public static function regitrarUsuario(Usuario $user) {
         try {
             global $con;
-            $time= time();
-            $fechaactual= date("d/m/y H:i:s", $time);
-            
-            $query = "INSERT INTO usuario(nombre, apellido, sexo, email, pass, estado, fechacre, fechamod) values('".$nombre."','".$apellido."', '".$sexo."', '".$email."', '".$pass."', '".$estado."', ".$fechaactual.", ".$fechaactual." )";
-
-            $re = $con->Execute($query);
-            echo $re;
+            $cout=$con->Execute("select max(usuarioid) from usuario");
+            $maxx=$cout->fields[0]+1;
+            $feis=$user->getFechai();
+            $fer=$user->getFechaf();
+          $tel=0;
+//            $query = "INSERT INTO usuario(nombre, apellido, sexo, email, pass, estado, fechacre, fechamod) values('$nombre', '$apellido', '$sexo', '$email', '$pass', '$estado', '$fecha_ini', '$fecha_fin' )";
+            $query2= "INSERT INTO usuario(usuarioid, nombre, apellido, sexo, email, pass, estado, fechacre, fechamod, telefono) VALUES (".$maxx.",'".$user->getNombre()."','".$user->getApellido()."','".$user->getSexo() ."','".$user->getEmail(). "','" .$user->getPass()."','habilitado','".$feis."','".$fer."',".$tel.")";
+            $re = $con->Execute($query2);
+            return TRUE;
         } catch (Exception $exc) {
             echo $exc->getTraceAsString();
         }
@@ -51,7 +53,9 @@ class DaoUsuario {
             global $con;
             $re = $con->Execute("select *from usuario");
             foreach ($re as $row) {
-             
+                //array(10) { [0]=> string(6) "tdydyd" ["descripcion"]=> string(6) "tdydyd" [1]=> string(8) "jvjgjhgj"
+                // ["email"]=> string(8) "jvjgjhgj" [2]=> string(5) "jkhkh" ["nombre"]=> string(5) "jkhkh" [3]=> string(2) "17" ["comentarios_sugerenciasid"]=> string(2) "17" [4]=> string(1) "1" ["paginaid"]=> string(1) "1" } 
+                //   var_dump($row);
                 $usuarioid = $row["usuarioid"];
                 $nombre = $row["nombre"];
                 $apellido = $row["apellido"];
@@ -59,10 +63,11 @@ class DaoUsuario {
                 $email = $row["email"];
 
                 $estado = $row["estado"];
-                $fechaactual= $rows["fechacre"];
-                $fechaactual = $row["fechamod"];
+                $fecha_ini = $row["fechacre"];
+                $fecha_fin = $row["fechamod"];
 
-                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, "", $estado, fechacre, $fechaactual);
+                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, "", $estado, $fecha_ini, $fecha_fin);
+                //var_dump($coment);
                 $lista[$cont++] = $user;
             }
             return $lista;
@@ -91,9 +96,9 @@ class DaoUsuario {
                 $sexo = $row["sexo"];
                 $email = $row["email"];
                 $estado = $row["estado"];
-                $fechacre = $row["fechacre"];
-                $fechamod = $row["fechamod"];
-                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, "", $estado, $fechacre, $fechamod);
+                $fecha_ini = $row["fechacre"];
+                $fecha_fin = $row["fechamod"];
+                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, "", $estado, $fecha_ini, $fecha_fin);
                 $lista[$cont++] = $user;
             }
             return $lista;
@@ -112,13 +117,13 @@ class DaoUsuario {
      * @param $email       email
      * @param $pass        contraseña
      * @param $estado      estado de usuario
-     * @param fechacre   fecha inicial
-     * @param $fechaactual   fecha final
+     * @param $fecha_ini   fecha inicial
+     * @param $fecha_fin   fecha final
      * 
      */
-    public static function update($nombre, $apellido, $sexo, $email, $pass, $estado, $fechacre , $fechamod) {
+    public static function update($nombre, $apellido, $sexo, $email, $pass, $estado, $fecha_ini, $fecha_fin) {
         // Creando consulta UPDATE
-        $consulta = "UPDATE usuario SET nombre='$nombre', apellido='$apellido', sexo='$sexo', pass='$pass', estado='$estado', fechacre='$fechacre', fechamod='$fechamod' WHERE email='$email'";
+        $consulta = "UPDATE usuario SET nombre='$nombre', apellido='$apellido', sexo='$sexo', pass='$pass', estado='$estado', fechacre='$fecha_ini', fechamod='$fecha_fin' WHERE email='$email'";
 
         try {
 
@@ -168,9 +173,9 @@ class DaoUsuario {
                 $email = $row["email"];
                 $pass = $row["pass"];
                 $estado = $row["estado"];
-                $fechacre = $row["fechacre"];
-                $fechamod = $row["fechamod"];
-                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, $pass, $estado, $fechacre, $fechamod);
+                $fecha_ini = $row["fechacre"];
+                $fecha_fin = $row["fechamod"];
+                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, $pass, $estado, $fecha_ini, $fecha_fin);
                 //var_dump($coment);
                 $lista[$cont++] = $user;
             }

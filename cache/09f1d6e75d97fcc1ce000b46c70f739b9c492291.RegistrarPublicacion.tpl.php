@@ -1,24 +1,24 @@
 <?php
-/* Smarty version 3.1.31-dev/1, created on 2017-10-17 01:39:42
+/* Smarty version 3.1.31-dev/1, created on 2017-10-17 07:46:06
   from "C:\xampp\htdocs\DistribuidosWeb\views\RegistrarPublicacion.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31-dev/1',
-  'unifunc' => 'content_59e5433e83d9e8_19052704',
+  'unifunc' => 'content_59e5991e36b5e4_21995553',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5d7b62b867c490db813515719f25e6aaa706b8ce' => 
     array (
       0 => 'C:\\xampp\\htdocs\\DistribuidosWeb\\views\\RegistrarPublicacion.tpl',
-      1 => 1508197171,
+      1 => 1508219156,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_59e5433e83d9e8_19052704 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59e5991e36b5e4_21995553 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="content-header">
     <h1>
@@ -85,15 +85,7 @@ function content_59e5433e83d9e8_19052704 (Smarty_Internal_Template $_smarty_tpl)
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
 
 
@@ -139,15 +131,7 @@ function content_59e5433e83d9e8_19052704 (Smarty_Internal_Template $_smarty_tpl)
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
 
 
@@ -199,15 +183,7 @@ function content_59e5433e83d9e8_19052704 (Smarty_Internal_Template $_smarty_tpl)
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
 
 

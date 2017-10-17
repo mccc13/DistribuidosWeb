@@ -6,8 +6,7 @@ require_once '../adodb5/adodb-exceptions.inc.php';
 
 
 
-    $nombre = 'lostpeople';
- 
+    $nombre = 'lostpeople'; 
     $dbdriver = 'postgres';    
     $dbserver = '127.0.0.1';
     $dbname = $nombre;    
