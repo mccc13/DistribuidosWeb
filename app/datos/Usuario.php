@@ -9,8 +9,8 @@ class Usuario {
     var $email;
     var $pass;
     var $estado;
-    var $fechaactual;
-    var $fechaactual;
+    var $fechacre;
+    var $fechamod;
 
     function __construct() {
         
@@ -84,8 +84,8 @@ class Usuario {
         $this->fechacre = $fechacre;
     }
 
-    function setFechaf($fechaactual) {
-        $this->fechamod = $fechaactual;
+    function setFechaf($fechemod) {
+        $this->fechamod = $fechemod;
     }
 
 }

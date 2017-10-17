@@ -2,7 +2,7 @@ $(document).on('submit', '#fromResgistrar', function (event) {
     event.preventDefault();
     var datas = $(this).serialize();
     $.ajax({
-        url: "http://localhost:8080/DistribuidosService/service/inserta_User.php",
+        url: "service/inserta_User.php",
         dataType: 'json',
         data: datas,
         type: 'POST'

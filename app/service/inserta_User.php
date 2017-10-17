@@ -9,8 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body = json_decode(file_get_contents("php://input"), true);
 
     // Insertar 
- //   $retorno = DaoUsuario::regitrarUsuario($body['userID'], $body['nombre'], $body['apellido'], $body['sexo'], $body['pass'], $body['fechacre'], $body['fechamod'], $body['email']);
-$retorno = DaoUsuario::regitrarUsuario('Diego', 'Miranda', 'M', 'diego@gmail.com','diego','');
+    //   $retorno = DaoUsuario::regitrarUsuario($body['userID'], $body['nombre'], $body['apellido'], $body['sexo'], $body['pass'], $body['fechacre'], $body['fechamod'], $body['email']);
+    $retorno = DaoUsuario::regitrarUsuario('Diego', 'Miranda', 'M', 'diego@gmail.com', 'diego', '');
 
     if ($retorno) {
         // Código de éxito

@@ -11,10 +11,10 @@
 </section>
 
 <section class="content">
-<div class="row">
-    <div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
             <!-- Custom Tabs -->
-        <div class="nav-tabs-custom">
+            <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab_1" data-toggle="tab">Registrar Publicacion</a></li>
                     <li><a href="#tab_2" data-toggle="tab">Datos Adicionales</a></li>
@@ -22,8 +22,8 @@
 
                     <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
                 </ul>
-                
-            <div class="tab-content">
+
+                <div class="tab-content">
                     <div class="tab-pane active" id="tab_1">
                         <form class="form-horizontal">
                             <div class="box-body">
@@ -62,7 +62,7 @@
                                         <input type="text" class="form-control" id="inputAlias" placeholder="Sexo">
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
                                         <div class="checkbox">
@@ -78,7 +78,7 @@
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_2">
-                        
+
                         <form class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
@@ -116,7 +116,7 @@
                                         <input type="text" class="form-control" id="inputotros" placeholder="Informacion adicional">
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
                                         <div class="checkbox">
@@ -132,7 +132,7 @@
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_3">
-                         <form class="form-horizontal">
+                        <form class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="inputnombre" class="col-sm-2 control-label">Nombre</label>
@@ -176,7 +176,7 @@
                                         <input type="text" class="form-control" id="inputemail" placeholder="Email">
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
                                         <div class="checkbox">
@@ -191,11 +191,11 @@
 
                     </div>
                     <!-- /.tab-pane -->
+                </div>
+                <!-- nav-tabs-custom -->
             </div>
-            <!-- nav-tabs-custom -->
+            <!-- /.col -->
         </div>
-        <!-- /.col -->
     </div>
-</div>
 
 </section>

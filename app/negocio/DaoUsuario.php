@@ -59,7 +59,7 @@ class DaoUsuario {
                 $email = $row["email"];
 
                 $estado = $row["estado"];
-                $fechaactual= $rows["fechaactual"];
+                $fechaactual= $rows["fechacre"];
                 $fechaactual = $row["fechamod"];
 
                 $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, "", $estado, fechacre, $fechaactual);
@@ -91,9 +91,9 @@ class DaoUsuario {
                 $sexo = $row["sexo"];
                 $email = $row["email"];
                 $estado = $row["estado"];
-                $fechaactual = $row["fechaactual"];
-                $fechaactual = $row["fechaactual"];
-                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, "", $estado, $fechaactual, $fechaactual);
+                $fechacre = $row["fechacre"];
+                $fechamod = $row["fechamod"];
+                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, "", $estado, $fechacre, $fechamod);
                 $lista[$cont++] = $user;
             }
             return $lista;
@@ -116,9 +116,9 @@ class DaoUsuario {
      * @param $fechaactual   fecha final
      * 
      */
-    public static function update($nombre, $apellido, $sexo, $email, $pass, $estado, $fechaactual , $fechaactual) {
+    public static function update($nombre, $apellido, $sexo, $email, $pass, $estado, $fechacre , $fechamod) {
         // Creando consulta UPDATE
-        $consulta = "UPDATE usuario SET nombre='$nombre', apellido='$apellido', sexo='$sexo', pass='$pass', estado='$estado', fechacre='$fechaactual', fechamod='$fechaactual' WHERE email='$email'";
+        $consulta = "UPDATE usuario SET nombre='$nombre', apellido='$apellido', sexo='$sexo', pass='$pass', estado='$estado', fechacre='$fechacre', fechamod='$fechamod' WHERE email='$email'";
 
         try {
 
@@ -159,6 +159,7 @@ class DaoUsuario {
 
             global $con;
             $re = $con->Execute($query);
+            $cont=0;
             foreach ($re as $row) {
                 $usuarioid = $row["usuarioid"];
                 $nombre = $row["nombre"];
@@ -167,9 +168,9 @@ class DaoUsuario {
                 $email = $row["email"];
                 $pass = $row["pass"];
                 $estado = $row["estado"];
-                $fechaactual = $row["fechacre"];
-                $fechaactual = $row["fechamod"];
-                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, $pass, $estado, $fechaactual, $fechaactual);
+                $fechacre = $row["fechacre"];
+                $fechamod = $row["fechamod"];
+                $user = new Usuario($usuarioid, $nombre, $apellido, $sexo, $email, $pass, $estado, $fechacre, $fechamod);
                 //var_dump($coment);
                 $lista[$cont++] = $user;
             }
