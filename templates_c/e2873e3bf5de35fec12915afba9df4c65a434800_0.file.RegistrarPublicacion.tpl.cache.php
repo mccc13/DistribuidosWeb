@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31-dev/1, created on 2017-10-16 23:55:58
+/* Smarty version 3.1.31-dev/1, created on 2017-10-17 16:55:05
   from "C:\xampp\htdocs\WebLostPeople\views\RegistrarPublicacion.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31-dev/1',
-  'unifunc' => 'content_59e52aee15c572_97148918',
+  'unifunc' => 'content_59e619c94fa845_54948635',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e2873e3bf5de35fec12915afba9df4c65a434800' => 
     array (
       0 => 'C:\\xampp\\htdocs\\WebLostPeople\\views\\RegistrarPublicacion.tpl',
-      1 => 1508190952,
+      1 => 1508252099,
       2 => 'file',
     ),
   ),
@@ -20,26 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59e52aee15c572_97148918 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '829359e52aee0ad979_81503876';
+function content_59e619c94fa845_54948635 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '737459e619c947b976_25867075';
 ?>
 <section class="content-header">
     <h1>
         Registrar 
         <small> Publicacion</small>
     </h1>
-    <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">General Elements</li>
-    </ol>
+    
 </section>
 
 <section class="content">
-<div class="row">
-    <div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
             <!-- Custom Tabs -->
-        <div class="nav-tabs-custom">
+            <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab_1" data-toggle="tab">Registrar Publicacion</a></li>
                     <li><a href="#tab_2" data-toggle="tab">Datos Adicionales</a></li>
@@ -47,8 +43,8 @@ $_smarty_tpl->compiled->nocache_hash = '829359e52aee0ad979_81503876';
 
                     <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
                 </ul>
-                
-            <div class="tab-content">
+
+                <div class="tab-content">
                     <div class="tab-pane active" id="tab_1">
                         <form class="form-horizontal">
                             <div class="box-body">
@@ -87,23 +83,15 @@ $_smarty_tpl->compiled->nocache_hash = '829359e52aee0ad979_81503876';
                                         <input type="text" class="form-control" id="inputAlias" placeholder="Sexo">
                                     </div>
                                 </div>
+
                                 
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
 
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_2">
-                        
+
                         <form class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
@@ -141,23 +129,15 @@ $_smarty_tpl->compiled->nocache_hash = '829359e52aee0ad979_81503876';
                                         <input type="text" class="form-control" id="inputotros" placeholder="Informacion adicional">
                                     </div>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+
+                               
                             </div>
 
 
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_3">
-                         <form class="form-horizontal">
+                        <form class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="inputnombre" class="col-sm-2 control-label">Nombre</label>
@@ -201,27 +181,19 @@ $_smarty_tpl->compiled->nocache_hash = '829359e52aee0ad979_81503876';
                                         <input type="text" class="form-control" id="inputemail" placeholder="Email">
                                     </div>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+
+                               
                             </div>
 
 
                     </div>
                     <!-- /.tab-pane -->
+                </div>
+                <!-- nav-tabs-custom -->
             </div>
-            <!-- nav-tabs-custom -->
+            <!-- /.col -->
         </div>
-        <!-- /.col -->
     </div>
-</div>
 
 </section><?php }
 }
